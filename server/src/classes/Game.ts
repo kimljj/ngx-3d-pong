@@ -43,7 +43,11 @@ export class Game {
   }
 
   public update() {
-    this.ball.move()
+    const hasPlayer = this.state.players.some(player => player.userId);
+
+    if (hasPlayer) {
+      this.ball.move();
+    }
 
     this.state.players.forEach((player: Player) => {
       if (player.userId) {
