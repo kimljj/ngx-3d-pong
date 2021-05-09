@@ -81,6 +81,8 @@ nodemon src/index.ts
 ```
 The server will be automatically restarted if you change any of the source files.
 
+** **To restart a new game please restart the server on http://localhost:3000/**
+
 <br/>
 
 ## Demo
