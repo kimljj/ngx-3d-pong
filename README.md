@@ -17,7 +17,7 @@ A 3D multiplayer pong game build by
 [Socket.io 4](https://github.com/socketio/socket.io) 
 and [Typescript 4](https://github.com/microsoft/TypeScript)
 
-Sigle player:
+Single player:
 ![Sigle player](shared/assets/images/1player.png)
 
 Multi player:
