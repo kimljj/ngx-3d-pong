@@ -1,6 +1,30 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
+ "branchPrefix":"renovate-",
+  "packageRules":[
+    {
+      "matchUpdateTypes":[
+        "patch",
+        "minor"
+      ],
+      "groupName":"npm patch and minor updates",
+      "matchManagers":[
+        "npm"
+      ]
+    },
+    {
+      "matchUpdateTypes":[
+        "major"
+      ],
+      "groupName":"npm major updates",
+      "matchManagers":[
+        "npm"
+      ]
+    },
+  ],
+  "separateMajorMinor":false,
+  "dryRun":false,
+  "enabledManagers":[
+    "npm"
   ]
 }
